@@ -54,16 +54,30 @@ function run(argv) {
     });
   }
   try {
-    const base64Decode = decodeBase64(text);
+    const base64Decode = decodeBase64(text, true);
     items.push({
       uid: 'Base64',
       icon: {
         path: './icons/Decode_Base64.png',
       },
-      title: base64Decode,
+      title: encodeControl(base64Decode),
       subtitle: '解码 Base64',
       arg: base64Decode,
     });
+    // 检查是否存在不可见字符，范围为 Cc（排除 \b\t\n\v\f\r）、Cf、Cn、Cs、M 和 Z。
+    if (/[\x00-\x07\x0E-\x1F\x7F-\x9F]|\p{Cf}|\p{Cn}|\p{Cs}|\p{M}|\p{Z}/u.test(base64Decode)) {
+      // 需要重新解码一次，不再处理 UTF-8
+      let binaryDecode = encodeBinary(decodeBase64(text, false));
+      items.push({
+        uid: 'Base64_2',
+        icon: {
+          path: './icons/Decode_Base64.png',
+        },
+        title: binaryDecode,
+        subtitle: '解码 Base64（二进制）',
+        arg: binaryDecode,
+      });
+    }
   } catch (ignored) { }
   if (items.length === 0) {
     items.push({
@@ -74,4 +88,39 @@ function run(argv) {
     });
   }
   return JSON.stringify({ items: items });
+}
+
+/**
+ * 控制字符的映射表。
+ */
+const controlMap = {
+  '\b': '\\b',
+  '\t': '\\t',
+  '\n': '\\n',
+  '\v': '\\v',
+  '\f': '\\f',
+  '\r': '\\r',
+};
+
+/**
+ * 编码部分控制字符 \b\t\n\v\f\r。
+ * @param {string} str 要编码的字符串。
+ */
+function encodeControl(str) {
+  return str.replace(/[\b\t\n\v\f\r]/g, ch => controlMap[ch]);
+}
+
+/**
+ * 编码为二进制。
+ * @param {string} str 要编码的字符串。
+ */
+function encodeBinary(str) {
+  const result = [];
+  for (let i = 0; i < str.length; i++) {
+    if (i > 0 && i % 8 === 0) {
+      result.push(' ');
+    }
+    result.push(str.charCodeAt(i).toString(16).padStart(2, '0'));
+  }
+  return result.join('');
 }

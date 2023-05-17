@@ -59,7 +59,7 @@ function encodeUTF8(char, output) {
 /**
  * 解码指定 Base64 字符串，与 atob 等价。
  */
-exports.decode = function (input) {
+exports.decode = function (input, utf8) {
   // 忽略空白字符 http://whatwg.org/html/common-microsyntaxes.html#space-character
   input = input.replace(/[\t\n\f\r ]/g, '');
   let len = input.length;
@@ -79,7 +79,12 @@ exports.decode = function (input) {
     char = TABLE.indexOf(input.charAt(i));
     value = bitCounter % 4 ? (value << 6) + char : char;
     if (bitCounter++ % 4) {
-      decodeUTF8(0xFF & value >> (-2 * bitCounter & 6), output);
+      const ch = 0xFF & value >> (-2 * bitCounter & 6);
+      if (utf8) {
+        decodeUTF8(ch, output);
+      } else {
+        output.push(String.fromCharCode(ch));
+      }
     }
   }
   return output.join('');
