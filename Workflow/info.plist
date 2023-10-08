@@ -8,7 +8,20 @@
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>8B54EB15-4928-4466-90E5-9174E6593CFE</key>
+		<key>0213EFD7-7A2E-450E-A16B-0977818F70B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -31,11 +44,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>E1EB3E24-4834-4402-9D7A-AB5A5E6D1902</key>
+		<key>8B54EB15-4928-4466-90E5-9174E6593CFE</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5E9ADB58-8725-4E7B-88B0-0321244C8DC8</string>
+				<string>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -43,9 +56,38 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+		</array>
+		<key>D42EF0DE-93C3-4B08-8E52-304E6259E515</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>E9B3855B-05DF-4C4C-8556-7A9D2C74EFE1</string>
+				<string>0213EFD7-7A2E-450E-A16B-0977818F70B8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E1EB3E24-4834-4402-9D7A-AB5A5E6D1902</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E2E47F7D-3453-4B3E-93CB-C9D170CD7A65</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0213EFD7-7A2E-450E-A16B-0977818F70B8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -117,46 +159,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>5E9ADB58-8725-4E7B-88B0-0321244C8DC8</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>复制到剪贴板</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>E9B3855B-05DF-4C4C-8556-7A9D2C74EFE1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -203,21 +205,160 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>5E9ADB58-8725-4E7B-88B0-0321244C8DC8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>md5file</string>
+				<key>subtext</key>
+				<string>计算文件的 MD5</string>
+				<key>text</key>
+				<string>MD5 File</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E2E47F7D-3453-4B3E-93CB-C9D170CD7A65</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>复制到剪贴板</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E9B3855B-05DF-4C4C-8556-7A9D2C74EFE1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function run() {
+	const finder = Application('Finder');
+	const selection = finder.selection();
+	if (selection.length === 0) {
+		return '未选择文件';
+	} else if (selection.length &gt; 1) {
+		return '不能计算多个文件的 MD5';
+	}
+	const path = decodeURIComponent(selection[0].url()).slice(7);
+	if (path.endsWith('/')) {
+		return '不能计算目录的 MD5';
+	}
+	const app = Application.currentApplication()
+	app.includeStandardAdditions = true
+	return app.doShellScript(`md5 -q "${path}"`)
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0213EFD7-7A2E-450E-A16B-0977818F70B8</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Calculate MD5</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>D42EF0DE-93C3-4B08-8E52-304E6259E515</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>文本编码和解码，支持：
 
 - URL
 - HTML 实体
-- Base64</string>
+- Base64
+- MD5</string>
 	<key>uidata</key>
 	<dict>
+		<key>0213EFD7-7A2E-450E-A16B-0977818F70B8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>380</integer>
+		</dict>
 		<key>5E9ADB58-8725-4E7B-88B0-0321244C8DC8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>475</integer>
+			<integer>640</integer>
 			<key>ypos</key>
-			<integer>60</integer>
+			<integer>200</integer>
+		</dict>
+		<key>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</key>
+		<dict>
+			<key>xpos</key>
+			<integer>515</integer>
+			<key>ypos</key>
+			<integer>310</integer>
 		</dict>
 		<key>8B54EB15-4928-4466-90E5-9174E6593CFE</key>
 		<dict>
@@ -226,6 +367,13 @@
 			<key>ypos</key>
 			<integer>60</integer>
 		</dict>
+		<key>D42EF0DE-93C3-4B08-8E52-304E6259E515</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
 		<key>E1EB3E24-4834-4402-9D7A-AB5A5E6D1902</key>
 		<dict>
 			<key>xpos</key>
@@ -233,18 +381,23 @@
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
+		<key>E2E47F7D-3453-4B3E-93CB-C9D170CD7A65</key>
+		<dict>
+			<key>xpos</key>
+			<integer>75</integer>
+			<key>ypos</key>
+			<integer>325</integer>
+		</dict>
 		<key>E9B3855B-05DF-4C4C-8556-7A9D2C74EFE1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>475</integer>
+			<integer>635</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>375</integer>
 		</dict>
 	</dict>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/CYJB/Alfred-Workflow-Encode_Decode</string>
 </dict>

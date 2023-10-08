@@ -5,6 +5,7 @@
 - URL
 - HTML 实体
 - Base64
+- MD5（仅编码）
 
 [⤓ 下载 Workflow](https://github.com/CYJB/Alfred-Workflow-Encode_Decode/releases/latest/download/encode_decode.alfredworkflow)
 
