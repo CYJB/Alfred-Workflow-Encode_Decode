@@ -9,12 +9,16 @@ const fromCodePoint = String.fromCodePoint ||
 
 /**
  * 编码指定的 HTML 实体。
+ *
+ * @param {string} text 要编码的文本。
+ * @returns {string} 编码结果。
  */
-exports.encode = function (text) {
+function encodeHTML(text) {
   if (!text) {
     return '';
   }
-  const { namedCharacters } = require('html-named-characters');
+  const { namedCharacters } = require('./html-named-characters');
+  // 这里只编码少部分必须的字符。
   return replaceUsingRegExp(text, /[<>'"&]/g, (input) => {
     let result = namedCharacters[input];
     if (result) {
@@ -30,13 +34,16 @@ const decodeRegExp = /&(?:AElig|AMP|Aacute|Acirc|Agrave|Aring|Atilde|Auml|COPY|C
 
 /**
  * 解码指定的 HTML 实体。
+ *
+ * @param {string} text 要解码的文本。
+ * @returns {string} 解码结果。
  */
-exports.decode = function (text) {
+function decodeHTML(text) {
   if (!text) {
     return '';
   }
 
-  const { namedEntities } = require('html-named-entities');
+  const { namedEntities } = require('./html-named-entities');
   return replaceUsingRegExp(text, decodeRegExp, (entity) => {
     let result = namedEntities[entity];
     if (result) {
@@ -45,8 +52,8 @@ exports.decode = function (text) {
     if (entity[0] === '&' && entity[1] === '#') {
       const decodeSecondChar = entity[2];
       const decodeCode = decodeSecondChar == 'x' || decodeSecondChar == 'X'
-        ? parseInt(entity.substr(3), 16)
-        : parseInt(entity.substr(2));
+        ? parseInt(entity.substring(3), 16)
+        : parseInt(entity.substring(2));
       return decodeCode >= 0x10ffff ? outOfBoundsChar : decodeCode > 65535
         ? fromCodePoint(decodeCode)
         : fromCharCode(numericUnicodeMap[decodeCode] || decodeCode);
@@ -58,6 +65,9 @@ exports.decode = function (text) {
 
 /**
  * 使用指定的正则表达式替换字符串。
+ * @param {string} text 原始字符串。
+ * @param {RegExp} regex 匹配的正则表达式。
+ * @param {(input: string) => string} replacer 替换方法。
  */
 function replaceUsingRegExp(text, regex, replacer) {
   regex.lastIndex = 0;
@@ -83,3 +93,5 @@ function replaceUsingRegExp(text, regex, replacer) {
   }
   return replaceResult;
 }
+
+module.exports = { encodeHTML, decodeHTML };

@@ -3,32 +3,27 @@
 const app = Application.currentApplication();
 app.includeStandardAdditions = true;
 
-/** 被引用的模块 */
-const requiredModuels = new Map();
-/** 引用指定的模块 */
-function require(path) {
-  let exports = requiredModuels.get(path);
-  if (exports) {
-    return exports;
-  }
-  exports = {};
-  requiredModuels.set(path, exports);
-  path = `utils/${path}.js`;
-  const handle = app.openForAccess(path);
+// 引入 require 方法。
+let require;
+{
+  const requirePath = './lib/require.js';
+  const handle = app.openForAccess(requirePath);
   const content = app.read(handle);
-  app.closeAccess(path);
-  (function (__content__, exports) {
-    eval(__content__);
-  })(content, exports);
-  return exports;
+  app.closeAccess(requirePath);
+  require = eval(content)(app);
 }
 
-const { encode: encodeHTML } = require('html-entities');
-const { encode: encodeBase64 } = require('base64');
-const { md5: encodeMD5 } = require('md5');
+const { encodeHTML } = require('./lib/html-entities');
+const { encodeBase64 } = require('./lib/base64');
+const { md5 } = require('./lib/md5');
 
+/**
+ * 执行脚本。
+ * @param {string[]} argv 参数。
+ */
 function run(argv) {
   const text = argv[0];
+  /** @type {{uid: string; icon: {path:string}, title: string, subtitle: string, arg:string}[]} */
   const items = [];
   const urlEncode = encodeURIComponent(text);
   if (urlEncode !== text) {
@@ -64,7 +59,7 @@ function run(argv) {
     subtitle: '编码 Base64',
     arg: base64Encode,
   });
-  const md5Encode = encodeMD5(text);
+  const md5Encode = md5(text);
   items.push({
     uid: 'MD5',
     icon: {
