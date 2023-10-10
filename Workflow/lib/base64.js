@@ -85,4 +85,17 @@ function decodeBase64(input, utf8) {
   return output.join('');
 };
 
-module.exports = { encodeBase64, decodeBase64 };
+/**
+ * 将十六进制数据转换为字符串。
+ * @param {string} input 十六进制数据。
+ * @returns 转换后的字符串。
+ */
+function hex2bin(input) {
+  var bin = '';
+  for (let i = 0; i < input.length; i = i + 2) {
+    bin += String.fromCharCode(parseInt(input.substr(i, 2), 16));
+  }
+  return bin;
+}
+
+module.exports = { encodeBase64, decodeBase64, hex2bin };

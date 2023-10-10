@@ -27,7 +27,7 @@ function md5(input) {
  */
 function md51(input) {
   let { length } = input;
-  const state = [1732584193, -271733879, -1732584194, 271733878];
+  const state = [0x67452301, 0xefcdab89, 0x98badcfe, 0x10325476];
   let i = 0;
   const data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   for (i = 64; i <= length; i += 64) {

@@ -36,7 +36,7 @@ test('./encode.js "https://github.com/CYJB/Alfred-Workflow-Encode_Decode?1234567
 
 test('./decode.js "中文&\\$>"', {
   items: [
-    { uid: 'None', title: '无解码结果', subtitle: '解码后的字符串与原始内容一致', valid: false },
+    { uid: 'Error', title: '无解码结果', subtitle: '解码后的字符串与原始内容一致', valid: false },
   ]
 });
 

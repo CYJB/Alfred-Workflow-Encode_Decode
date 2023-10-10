@@ -148,7 +148,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9677DDBC-49BA-4B5C-AAD2-D2FAD8612F91</string>
+				<string>5C1088EA-62E9-4AFF-B6E6-3901AA056750</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -225,7 +225,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0213EFD7-7A2E-450E-A16B-0977818F70B8</string>
+				<string>F6A8357C-D643-4F06-B970-C91F5AC66EA9</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -514,23 +514,51 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
+				<key>escaping</key>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>md5f</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>正在计算访达当前选中文件内容的 MD5</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>md5f.js</string>
 				<key>subtext</key>
 				<string>计算访达当前选中文件内容的 MD5</string>
-				<key>text</key>
+				<key>title</key>
 				<string>计算文件内容的 MD5</string>
+				<key>type</key>
+				<integer>8</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>E2E47F7D-3453-4B3E-93CB-C9D170CD7A65</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -554,36 +582,6 @@
 			<string>0213EFD7-7A2E-450E-A16B-0977818F70B8</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<true/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>^[0-9a-zA-Z]+$</string>
-						<key>outputlabel</key>
-						<string>Output</string>
-						<key>uid</key>
-						<string>47DE31B3-E7B9-463F-A5F7-C9D027DAA98E</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Error</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>3EB99036-CB02-468F-BD67-EDF23B2E2D40</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -620,6 +618,36 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>BF2E11E7-D638-4117-AD1A-7B2F50D3B7F6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^[0-9a-zA-Z]+$</string>
+						<key>outputlabel</key>
+						<string>Output</string>
+						<key>uid</key>
+						<string>47DE31B3-E7B9-463F-A5F7-C9D027DAA98E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Error</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>3EB99036-CB02-468F-BD67-EDF23B2E2D40</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -702,23 +730,51 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>2</integer>
+				<key>escaping</key>
+				<integer>0</integer>
 				<key>keyword</key>
 				<string>crc32f</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>正在计算访达当前选中文件内容的 MD5</string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>crc32f.js</string>
 				<key>subtext</key>
-				<string>计算访达当前选中文件内容的 CRC32</string>
-				<key>text</key>
+				<string>计算访达当前选中文件内容的 MD5</string>
+				<key>title</key>
 				<string>计算文件内容的 CRC32</string>
+				<key>type</key>
+				<integer>8</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>9BDB3511-8737-4653-ABC6-61EA98EFABDA</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -767,36 +823,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<true/>
-						<key>matchmode</key>
-						<integer>4</integer>
-						<key>matchstring</key>
-						<string>^[0-9a-zA-Z]+$</string>
-						<key>outputlabel</key>
-						<string>Output</string>
-						<key>uid</key>
-						<string>47DE31B3-E7B9-463F-A5F7-C9D027DAA98E</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>Error</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>C7CB2C0A-391A-4A4C-91AC-6984319967D7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -832,6 +858,36 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^[0-9a-zA-Z]+$</string>
+						<key>outputlabel</key>
+						<string>Output</string>
+						<key>uid</key>
+						<string>47DE31B3-E7B9-463F-A5F7-C9D027DAA98E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Error</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C7CB2C0A-391A-4A4C-91AC-6984319967D7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>文本编码和解码，支持：
@@ -839,15 +895,16 @@
 - URL
 - HTML 实体
 - Base64
-- MD5</string>
+- MD5
+- CRC32</string>
 	<key>uidata</key>
 	<dict>
 		<key>0213EFD7-7A2E-450E-A16B-0977818F70B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>430</integer>
+			<integer>495</integer>
 		</dict>
 		<key>1577B722-907E-4C51-916F-63D63AD57B6B</key>
 		<dict>
@@ -861,7 +918,7 @@
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
-			<integer>450</integer>
+			<integer>500</integer>
 		</dict>
 		<key>5122A9E1-41FF-40DB-B874-2D9A0E606F0B</key>
 		<dict>
@@ -922,9 +979,9 @@
 		<key>9677DDBC-49BA-4B5C-AAD2-D2FAD8612F91</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>275</integer>
 			<key>ypos</key>
-			<integer>765</integer>
+			<integer>830</integer>
 		</dict>
 		<key>9BDB3511-8737-4653-ABC6-61EA98EFABDA</key>
 		<dict>
@@ -952,7 +1009,7 @@
 			<key>xpos</key>
 			<integer>455</integer>
 			<key>ypos</key>
-			<integer>785</integer>
+			<integer>835</integer>
 		</dict>
 		<key>D42EF0DE-93C3-4B08-8E52-304E6259E515</key>
 		<dict>
@@ -1007,7 +1064,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/CYJB/Alfred-Workflow-Encode_Decode</string>
 </dict>

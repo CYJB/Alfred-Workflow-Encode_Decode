@@ -13,8 +13,9 @@ let require;
   require = eval(content)(app);
 }
 
-const { decodeHTML } = require('./lib/html-entities');
+const { Result } = require('./lib/alfred');
 const { decodeBase64 } = require('./lib/base64');
+const { decodeHTML } = require('./lib/html-entities');
 
 /**
  * 执行脚本。
@@ -22,35 +23,32 @@ const { decodeBase64 } = require('./lib/base64');
  */
 function run(argv) {
   const text = argv[0];
-  /** @type {{uid: string; icon: {path:string}, title: string, subtitle: string, arg:string}[]} */
-  const items = [];
+  const result = new Result();
   const urlDecode = decodeURIComponent(text);
   if (urlDecode !== text) {
-    items.push({
+    result.add({
       uid: 'URL',
       icon: {
         path: './icons/Decode_URL.png',
       },
       title: urlDecode,
       subtitle: '解码 URL',
-      arg: urlDecode,
     });
   }
   const htmlDecode = decodeHTML(text);
   if (htmlDecode !== text) {
-    items.push({
+    result.add({
       uid: 'HTML',
       icon: {
         path: './icons/Decode_HTML.png',
       },
       title: htmlDecode,
       subtitle: '解码 HTML',
-      arg: htmlDecode,
     });
   }
   try {
     const base64Decode = decodeBase64(text, true);
-    items.push({
+    result.add({
       uid: 'Base64',
       icon: {
         path: './icons/Decode_Base64.png',
@@ -63,26 +61,20 @@ function run(argv) {
     if (/[\x00-\x07\x0E-\x1F\x7F-\x9F]|\p{Cf}|\p{Cn}|\p{Cs}|\p{M}|\p{Z}/u.test(base64Decode)) {
       // 需要重新解码一次，不再处理 UTF-8
       let binaryDecode = encodeBinary(decodeBase64(text, false));
-      items.push({
+      result.add({
         uid: 'Base64_2',
         icon: {
           path: './icons/Decode_Base64.png',
         },
         title: binaryDecode,
         subtitle: '解码 Base64（二进制）',
-        arg: binaryDecode,
       });
     }
   } catch (ignored) { }
-  if (items.length === 0) {
-    items.push({
-      uid: 'None',
-      title: '无解码结果',
-      subtitle: '解码后的字符串与原始内容一致',
-      valid: false,
-    });
+  if (result.length === 0) {
+    return Result.error('无解码结果', '解码后的字符串与原始内容一致');
   }
-  return JSON.stringify({ items: items });
+  return result.toString();
 }
 
 /**

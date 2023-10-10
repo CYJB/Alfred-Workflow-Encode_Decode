@@ -13,6 +13,7 @@ let require;
   require = eval(content)(app);
 }
 
+const { Result } = require('./lib/alfred');
 const { crc32 } = require('./lib/crc32');
 
 /**
@@ -21,26 +22,19 @@ const { crc32 } = require('./lib/crc32');
  */
 function run(argv) {
   const result = crc32(argv[0]);
-  return JSON.stringify({
-    items: [
-      {
-        uid: 'CRC32_10',
-        icon: {
-          path: './icons/Encode_CRC32.png',
-        },
-        title: result.toString(),
-        subtitle: 'CRC32(十进制)',
-        arg: result.toString(),
-      },
-      {
-        uid: 'CRC32_16',
-        icon: {
-          path: './icons/Encode_CRC32.png',
-        },
-        title: result.toString(16),
-        subtitle: 'CRC32(十六进制)',
-        arg: result.toString(16),
-      },
-    ]
-  });
+  return new Result().add({
+    uid: 'CRC32_10',
+    icon: {
+      path: './icons/Encode_CRC32.png',
+    },
+    title: result.toString(),
+    subtitle: 'CRC32(十进制)',
+  }).add({
+    uid: 'CRC32_16',
+    icon: {
+      path: './icons/Encode_CRC32.png',
+    },
+    title: result.toString(16),
+    subtitle: 'CRC32(十六进制)',
+  }).toString();
 }

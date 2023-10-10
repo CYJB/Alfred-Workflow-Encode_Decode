@@ -13,8 +13,9 @@ let require;
   require = eval(content)(app);
 }
 
-const { encodeHTML } = require('./lib/html-entities');
+const { Result } = require('./lib/alfred');
 const { encodeBase64 } = require('./lib/base64');
+const { encodeHTML } = require('./lib/html-entities');
 
 /**
  * 执行脚本。
@@ -22,41 +23,37 @@ const { encodeBase64 } = require('./lib/base64');
  */
 function run(argv) {
   const text = argv[0];
-  /** @type {{uid: string; icon: {path:string}, title: string, subtitle: string, arg:string}[]} */
-  const items = [];
+  const result = new Result();
   const urlEncode = encodeURIComponent(text);
   if (urlEncode !== text) {
-    items.push({
+    result.add({
       uid: 'URL',
       icon: {
         path: './icons/Encode_URL.png',
       },
       title: urlEncode,
       subtitle: '编码 URL',
-      arg: urlEncode,
     });
   }
   const htmlEncode = encodeHTML(text);
   if (htmlEncode !== text) {
-    items.push({
+    result.add({
       uid: 'HTML',
       icon: {
         path: './icons/Encode_HTML.png',
       },
       title: htmlEncode,
       subtitle: '编码 HTML',
-      arg: htmlEncode,
     });
   }
   const base64Encode = encodeBase64(text);
-  items.push({
+  result.add({
     uid: 'Base64',
     icon: {
       path: './icons/Encode_Base64.png',
     },
     title: base64Encode,
     subtitle: '编码 Base64',
-    arg: base64Encode,
   });
-  return JSON.stringify({ items: items });
+  return result.toString();
 }
