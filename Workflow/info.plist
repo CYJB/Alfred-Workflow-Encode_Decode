@@ -305,13 +305,13 @@
 				<key>keyword</key>
 				<string>encode</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
 				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>正在编码 "{query}"</string>
 				<key>script</key>
@@ -383,13 +383,13 @@
 				<key>keyword</key>
 				<string>decode</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
 				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>正在解码 "{query}"</string>
 				<key>script</key>
@@ -538,38 +538,15 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>/**
- * 执行脚本。
- * @param {string[]} argv 参数。
- */
-function run(argv) {
-  let path = argv[0];
-  if (!path) {
-    // 未传入路径，使用 Finder 当前选择的文件。
-    const finder = Application('Finder');
-    const selection = finder.selection();
-    if (selection.length === 0) {
-      return '未选择文件';
-    } else if (selection.length &gt; 1) {
-      return '不能计算多个文件的 MD5';
-    }
-    path = decodeURIComponent(selection[0].url()).slice(7);
-  }
-  if (path.endsWith('/')) {
-    return '不能计算目录的 MD5';
-  }
-  const app = Application.currentApplication()
-  app.includeStandardAdditions = true
-  return app.doShellScript(`md5 -q "${path}"`)
-}</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>md5f.js</string>
 				<key>type</key>
-				<integer>7</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -770,38 +747,15 @@ function run(argv) {
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>68</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>/**
- * 执行脚本。
- * @param {string[]} argv 参数。
- */
-function run(argv) {
-  let path = argv[0];
-  if (!path) {
-    // 未传入路径，使用 Finder 当前选择的文件。
-    const finder = Application('Finder');
-    const selection = finder.selection();
-    if (selection.length === 0) {
-      return '未选择文件';
-    } else if (selection.length &gt; 1) {
-      return '不能计算多个文件的 CRC32';
-    }
-    path = decodeURIComponent(selection[0].url()).slice(7);
-  }
-  if (path.endsWith('/')) {
-    return '不能计算目录的 CRC32';
-  }
-  const app = Application.currentApplication()
-  app.includeStandardAdditions = true
-  return app.doShellScript(`crc32 "${path}"`)
-}</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>crc32f.js</string>
 				<key>type</key>
-				<integer>7</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -933,9 +887,9 @@ function run(argv) {
 		<key>5E9ADB58-8725-4E7B-88B0-0321244C8DC8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>675</integer>
 			<key>ypos</key>
-			<integer>55</integer>
+			<integer>60</integer>
 		</dict>
 		<key>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</key>
 		<dict>
@@ -1024,9 +978,9 @@ function run(argv) {
 		<key>E9B3855B-05DF-4C4C-8556-7A9D2C74EFE1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>675</integer>
 			<key>ypos</key>
-			<integer>160</integer>
+			<integer>165</integer>
 		</dict>
 		<key>EFFB230A-096F-4404-BF15-1058B5736A2B</key>
 		<dict>
