@@ -46,6 +46,18 @@ function run(argv) {
       subtitle: '编码 HTML',
     });
   }
+  // JSON 序列化后需要忽略两端的 "。
+  const jsonEncode = JSON.stringify(text).slice(1, -1);
+  if (jsonEncode !== text) {
+    result.add({
+      uid: 'JSON',
+      icon: {
+        path: './icons/Encode_JSON.png',
+      },
+      title: jsonEncode,
+      subtitle: '编码 JSON 字符串',
+    });
+  }
   const base64Encode = encodeBase64(text);
   result.add({
     uid: 'Base64',

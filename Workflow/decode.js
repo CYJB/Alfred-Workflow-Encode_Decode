@@ -47,6 +47,19 @@ function run(argv) {
     });
   }
   try {
+    const jsonDecode = JSON.parse(`"${text}"`);
+    if (jsonDecode !== text) {
+      result.add({
+        uid: 'JSON',
+        icon: {
+          path: './icons/Decode_JSON.png',
+        },
+        title: jsonDecode,
+        subtitle: '解码 JSON 字符串',
+      });
+    }
+  } catch (ignored) { }
+  try {
     const base64Decode = decodeBase64(text, true);
     result.add({
       uid: 'Base64',

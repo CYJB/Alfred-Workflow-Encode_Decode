@@ -34,6 +34,15 @@ test('./encode.js "https://github.com/CYJB/Alfred-Workflow-Encode_Decode?1234567
   ]
 });
 
+test('./encode.js "abc\\""', {
+  items: [
+    { uid: 'URL', icon: { path: './icons/Encode_URL.png' }, title: 'abc%22', subtitle: '编码 URL', arg: 'abc%22' },
+    { uid: 'HTML', icon: { path: './icons/Encode_HTML.png' }, title: 'abc&quot;', subtitle: '编码 HTML', arg: 'abc&quot;' },
+    { uid: 'JSON', icon: { path: './icons/Encode_JSON.png' }, title: 'abc\\"', subtitle: '编码 JSON 字符串', arg: 'abc\\"' },
+    { uid: 'Base64', icon: { path: './icons/Encode_Base64.png' }, title: 'YWJjIg==', subtitle: '编码 Base64', arg: 'YWJjIg==' },
+  ]
+});
+
 test('./decode.js "中文&\\$>"', {
   items: [
     { uid: 'Error', title: '无解码结果', subtitle: '解码后的字符串与原始内容一致', valid: false },
@@ -55,6 +64,12 @@ test('./decode.js "中文&amp;$&gt;"', {
 test('./decode.js "5Lit5paHJiQ+"', {
   items: [
     { uid: 'Base64', icon: { path: './icons/Decode_Base64.png' }, title: '中文&$>', subtitle: '解码 Base64', arg: '中文&$>' },
+  ]
+});
+
+test('./decode.js "abc\\\\\\\""', {
+  items: [
+    { uid: 'JSON', icon: { path: './icons/Decode_JSON.png' }, title: 'abc"', subtitle: '解码 JSON 字符串', arg: 'abc"' },
   ]
 });
 

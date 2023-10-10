@@ -4,7 +4,11 @@
 
 - URL
 - HTML 实体
+- JSON 字符串
 - Base64
+
+支持计算文本摘要：
+
 - MD5
 - CRC32
 
@@ -19,6 +23,8 @@
 使用 `decode` 关键字生成对指定文本解码，并复制到剪贴板。这里只会列出成功解码且与原始字符串不同的项。
 
 ![Alfred workflow decode](images/decode.png)
+
+![Alfred workflow decode json](images/decode_json.png)
 
 使用 `md5` 关键字计算指定文本的 MD5，并复制到剪贴板。
 
