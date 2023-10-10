@@ -12,7 +12,68 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</string>
+				<string>3EB99036-CB02-468F-BD67-EDF23B2E2D40</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3EB99036-CB02-468F-BD67-EDF23B2E2D40</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F6A8357C-D643-4F06-B970-C91F5AC66EA9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>47DE31B3-E7B9-463F-A5F7-C9D027DAA98E</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF2E11E7-D638-4117-AD1A-7B2F50D3B7F6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5122A9E1-41FF-40DB-B874-2D9A0E606F0B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F6A8357C-D643-4F06-B970-C91F5AC66EA9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5C1088EA-62E9-4AFF-B6E6-3901AA056750</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EFFB230A-096F-4404-BF15-1058B5736A2B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1577B722-907E-4C51-916F-63D63AD57B6B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -49,6 +110,83 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>94F66A6C-E173-459A-A96D-294AEB500FAD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9677DDBC-49BA-4B5C-AAD2-D2FAD8612F91</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9677DDBC-49BA-4B5C-AAD2-D2FAD8612F91</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C7CB2C0A-391A-4A4C-91AC-6984319967D7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9BDB3511-8737-4653-ABC6-61EA98EFABDA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9677DDBC-49BA-4B5C-AAD2-D2FAD8612F91</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AD53E79C-AA5A-4A0C-A214-CE12B33BBA4A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5C1088EA-62E9-4AFF-B6E6-3901AA056750</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C7CB2C0A-391A-4A4C-91AC-6984319967D7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5C1088EA-62E9-4AFF-B6E6-3901AA056750</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>47DE31B3-E7B9-463F-A5F7-C9D027DAA98E</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>595326E6-E6DC-4CA0-B167-EE1DF7A5C012</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -96,6 +234,29 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F6A8357C-D643-4F06-B970-C91F5AC66EA9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>686BFF17-63DC-49E7-8ECE-D8F01717588C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F0F3AD95-6014-4FA4-81A5-2C9C9ECF28F1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>CYJB</string>
@@ -107,6 +268,25 @@
 	<string>Encode/Decode</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>5E9ADB58-8725-4E7B-88B0-0321244C8DC8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -155,6 +335,35 @@
 			<string>8B54EB15-4928-4466-90E5-9174E6593CFE</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>复制到剪贴板</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E9B3855B-05DF-4C4C-8556-7A9D2C74EFE1</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -220,7 +429,56 @@
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
-			<string>5E9ADB58-8725-4E7B-88B0-0321244C8DC8</string>
+			<string>686BFF17-63DC-49E7-8ECE-D8F01717588C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>md5</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>正在计算 "{query}" 的 MD5</string>
+				<key>script</key>
+				<string>php decode.php "$(./normalise -form NFC "{query}")"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>md5.js</string>
+				<key>subtext</key>
+				<string>计算 "{query}" 的 MD5</string>
+				<key>title</key>
+				<string>计算 MD5</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5122A9E1-41FF-40DB-B874-2D9A0E606F0B</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -228,28 +486,7 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>md5file</string>
-				<key>subtext</key>
-				<string>计算文件的 MD5</string>
-				<key>text</key>
-				<string>MD5 File</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>E2E47F7D-3453-4B3E-93CB-C9D170CD7A65</string>
+			<string>F6A8357C-D643-4F06-B970-C91F5AC66EA9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -265,12 +502,33 @@
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>复制到剪贴板</string>
+				<string>复制 MD5 到剪贴板</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>E9B3855B-05DF-4C4C-8556-7A9D2C74EFE1</string>
+			<string>F0F3AD95-6014-4FA4-81A5-2C9C9ECF28F1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>md5f</string>
+				<key>subtext</key>
+				<string>计算访达当前选中文件内容的 MD5</string>
+				<key>text</key>
+				<string>计算文件内容的 MD5</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>E2E47F7D-3453-4B3E-93CB-C9D170CD7A65</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -282,21 +540,29 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>function run() {
-	const finder = Application('Finder');
-	const selection = finder.selection();
-	if (selection.length === 0) {
-		return '未选择文件';
-	} else if (selection.length &gt; 1) {
-		return '不能计算多个文件的 MD5';
-	}
-	const path = decodeURIComponent(selection[0].url()).slice(7);
-	if (path.endsWith('/')) {
-		return '不能计算目录的 MD5';
-	}
-	const app = Application.currentApplication()
-	app.includeStandardAdditions = true
-	return app.doShellScript(`md5 -q "${path}"`)
+				<string>/**
+ * 执行脚本。
+ * @param {string[]} argv 参数。
+ */
+function run(argv) {
+  let path = argv[0];
+  if (!path) {
+    // 未传入路径，使用 Finder 当前选择的文件。
+    const finder = Application('Finder');
+    const selection = finder.selection();
+    if (selection.length === 0) {
+      return '未选择文件';
+    } else if (selection.length &gt; 1) {
+      return '不能计算多个文件的 MD5';
+    }
+    path = decodeURIComponent(selection[0].url()).slice(7);
+  }
+  if (path.endsWith('/')) {
+    return '不能计算目录的 MD5';
+  }
+  const app = Application.currentApplication()
+  app.includeStandardAdditions = true
+  return app.doShellScript(`md5 -q "${path}"`)
 }</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -315,17 +581,300 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^[0-9a-zA-Z]+$</string>
+						<key>outputlabel</key>
+						<string>Output</string>
+						<key>uid</key>
+						<string>47DE31B3-E7B9-463F-A5F7-C9D027DAA98E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Error</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>3EB99036-CB02-468F-BD67-EDF23B2E2D40</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>acceptsmulti</key>
 				<integer>0</integer>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>Calculate MD5</string>
+				<string>计算文件内容 MD5</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>
 			<key>uid</key>
 			<string>D42EF0DE-93C3-4B08-8E52-304E6259E515</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>无法计算 MD5</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>BF2E11E7-D638-4117-AD1A-7B2F50D3B7F6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>crc32</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>正在计算 "{query}" 的 CRC325</string>
+				<key>script</key>
+				<string>php decode.php "$(./normalise -form NFC "{query}")"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>crc32.js</string>
+				<key>subtext</key>
+				<string>计算 "{query}" 的 CRC325</string>
+				<key>title</key>
+				<string>计算 CRC32</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AD53E79C-AA5A-4A0C-A214-CE12B33BBA4A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>EFFB230A-096F-4404-BF15-1058B5736A2B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>5C1088EA-62E9-4AFF-B6E6-3901AA056750</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>crc32f</string>
+				<key>subtext</key>
+				<string>计算访达当前选中文件内容的 CRC32</string>
+				<key>text</key>
+				<string>计算文件内容的 CRC32</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9BDB3511-8737-4653-ABC6-61EA98EFABDA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>复制 CRC32 到剪贴板</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>1577B722-907E-4C51-916F-63D63AD57B6B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>/**
+ * 执行脚本。
+ * @param {string[]} argv 参数。
+ */
+function run(argv) {
+  let path = argv[0];
+  if (!path) {
+    // 未传入路径，使用 Finder 当前选择的文件。
+    const finder = Application('Finder');
+    const selection = finder.selection();
+    if (selection.length === 0) {
+      return '未选择文件';
+    } else if (selection.length &gt; 1) {
+      return '不能计算多个文件的 CRC32';
+    }
+    path = decodeURIComponent(selection[0].url()).slice(7);
+  }
+  if (path.endsWith('/')) {
+    return '不能计算目录的 CRC32';
+  }
+  const app = Application.currentApplication()
+  app.includeStandardAdditions = true
+  return app.doShellScript(`crc32 "${path}"`)
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9677DDBC-49BA-4B5C-AAD2-D2FAD8612F91</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^[0-9a-zA-Z]+$</string>
+						<key>outputlabel</key>
+						<string>Output</string>
+						<key>uid</key>
+						<string>47DE31B3-E7B9-463F-A5F7-C9D027DAA98E</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Error</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C7CB2C0A-391A-4A4C-91AC-6984319967D7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>无法计算 CRC32</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>595326E6-E6DC-4CA0-B167-EE1DF7A5C012</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>计算文件内容 CRC32</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>94F66A6C-E173-459A-A96D-294AEB500FAD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -342,23 +891,65 @@
 		<key>0213EFD7-7A2E-450E-A16B-0977818F70B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<integer>290</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>430</integer>
+		</dict>
+		<key>1577B722-907E-4C51-916F-63D63AD57B6B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>725</integer>
+		</dict>
+		<key>3EB99036-CB02-468F-BD67-EDF23B2E2D40</key>
+		<dict>
+			<key>xpos</key>
+			<integer>455</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
+		<key>5122A9E1-41FF-40DB-B874-2D9A0E606F0B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>75</integer>
+			<key>ypos</key>
+			<integer>285</integer>
+		</dict>
+		<key>595326E6-E6DC-4CA0-B167-EE1DF7A5C012</key>
+		<dict>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>830</integer>
+		</dict>
+		<key>5C1088EA-62E9-4AFF-B6E6-3901AA056750</key>
+		<dict>
+			<key>xpos</key>
+			<integer>580</integer>
+			<key>ypos</key>
+			<integer>705</integer>
 		</dict>
 		<key>5E9ADB58-8725-4E7B-88B0-0321244C8DC8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>640</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>55</integer>
 		</dict>
 		<key>6029A8F2-D8B5-4C0D-AE23-ACF4C6BC1718</key>
 		<dict>
 			<key>xpos</key>
-			<integer>515</integer>
+			<integer>430</integer>
 			<key>ypos</key>
-			<integer>310</integer>
+			<integer>140</integer>
+		</dict>
+		<key>686BFF17-63DC-49E7-8ECE-D8F01717588C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>285</integer>
 		</dict>
 		<key>8B54EB15-4928-4466-90E5-9174E6593CFE</key>
 		<dict>
@@ -367,33 +958,96 @@
 			<key>ypos</key>
 			<integer>60</integer>
 		</dict>
+		<key>94F66A6C-E173-459A-A96D-294AEB500FAD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>75</integer>
+			<key>ypos</key>
+			<integer>830</integer>
+		</dict>
+		<key>9677DDBC-49BA-4B5C-AAD2-D2FAD8612F91</key>
+		<dict>
+			<key>xpos</key>
+			<integer>290</integer>
+			<key>ypos</key>
+			<integer>765</integer>
+		</dict>
+		<key>9BDB3511-8737-4653-ABC6-61EA98EFABDA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>75</integer>
+			<key>ypos</key>
+			<integer>725</integer>
+		</dict>
+		<key>AD53E79C-AA5A-4A0C-A214-CE12B33BBA4A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>75</integer>
+			<key>ypos</key>
+			<integer>620</integer>
+		</dict>
+		<key>BF2E11E7-D638-4117-AD1A-7B2F50D3B7F6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>495</integer>
+		</dict>
+		<key>C7CB2C0A-391A-4A4C-91AC-6984319967D7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>455</integer>
+			<key>ypos</key>
+			<integer>785</integer>
+		</dict>
 		<key>D42EF0DE-93C3-4B08-8E52-304E6259E515</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<integer>75</integer>
 			<key>ypos</key>
-			<integer>450</integer>
+			<integer>495</integer>
 		</dict>
 		<key>E1EB3E24-4834-4402-9D7A-AB5A5E6D1902</key>
 		<dict>
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
-			<integer>190</integer>
+			<integer>165</integer>
 		</dict>
 		<key>E2E47F7D-3453-4B3E-93CB-C9D170CD7A65</key>
 		<dict>
 			<key>xpos</key>
 			<integer>75</integer>
 			<key>ypos</key>
-			<integer>325</integer>
+			<integer>390</integer>
 		</dict>
 		<key>E9B3855B-05DF-4C4C-8556-7A9D2C74EFE1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>635</integer>
+			<integer>670</integer>
 			<key>ypos</key>
-			<integer>375</integer>
+			<integer>160</integer>
+		</dict>
+		<key>EFFB230A-096F-4404-BF15-1058B5736A2B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>620</integer>
+		</dict>
+		<key>F0F3AD95-6014-4FA4-81A5-2C9C9ECF28F1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
+		<key>F6A8357C-D643-4F06-B970-C91F5AC66EA9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>580</integer>
+			<key>ypos</key>
+			<integer>370</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>

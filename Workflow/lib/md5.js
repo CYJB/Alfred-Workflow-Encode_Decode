@@ -8,7 +8,7 @@
  * @see http://jsperf.com/md5-shootout/7
  */
 
-const { encodeUTF8Char } = require('./utf-8');
+const { encodeUTF8 } = require('./utf-8');
 
 /**
  * 计算指定文本的 MD5。
@@ -16,12 +16,7 @@ const { encodeUTF8Char } = require('./utf-8');
  * @returns {string} 指定文本的 MD5 字符串。
  */
 function md5(input) {
-  /** @type {number[]} */
-  const chars = [];
-  for (let i = 0; i < input.length; i++) {
-    encodeUTF8Char(input.charCodeAt(i), chars);
-  }
-  const hash = md51(chars);
+  const hash = md51(encodeUTF8(input));
   return hex(hash);
 }
 

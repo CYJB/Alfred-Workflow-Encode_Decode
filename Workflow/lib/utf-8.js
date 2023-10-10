@@ -17,6 +17,20 @@ function encodeUTF8Char(charCode, output) {
 }
 
 /**
+ * 将指定字符串编码为 UTF-8 数组。
+ * @param {string} input 要编码的字符串。
+ * @returns {number[]} 编码的 UTF-8 数组。
+ */
+function encodeUTF8(input) {
+  /** @type {number[]} */
+  const result = [];
+  for (let i = 0; i < input.length; i++) {
+    encodeUTF8Char(input.charCodeAt(i), result);
+  }
+  return result;
+}
+
+/**
  * UTF-8 的解码器。
  */
 class UTF8Decoder {
@@ -70,4 +84,4 @@ class UTF8Decoder {
   }
 }
 
-module.exports = { encodeUTF8Char, UTF8Decoder };
+module.exports = { encodeUTF8Char, encodeUTF8, UTF8Decoder };

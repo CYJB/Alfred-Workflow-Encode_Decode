@@ -15,7 +15,6 @@ let require;
 
 const { encodeHTML } = require('./lib/html-entities');
 const { encodeBase64 } = require('./lib/base64');
-const { md5 } = require('./lib/md5');
 
 /**
  * 执行脚本。
@@ -58,16 +57,6 @@ function run(argv) {
     title: base64Encode,
     subtitle: '编码 Base64',
     arg: base64Encode,
-  });
-  const md5Encode = md5(text);
-  items.push({
-    uid: 'MD5',
-    icon: {
-      path: './icons/Encode_MD5.png',
-    },
-    title: md5Encode,
-    subtitle: '编码 MD5',
-    arg: md5Encode,
   });
   return JSON.stringify({ items: items });
 }
