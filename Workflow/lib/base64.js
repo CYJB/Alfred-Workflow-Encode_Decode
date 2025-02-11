@@ -34,12 +34,12 @@ function encodeBase64(input) {
       value = (stack[0] << 8) | stack[1];
       output.push(TABLE[value >> 10]);
       output.push(TABLE[value >> 4 & 0x3F]);
-      output.push(TABLE[value >> 2 & 0x3F]);
+      output.push(TABLE[(value & 0xF) << 2]);
       output.push('=');
     } else if (stack.length == 1) {
       value = stack[0];
       output.push(TABLE[value >> 2]);
-      output.push(TABLE[(value << 4) & 0x3F]);
+      output.push(TABLE[(value & 0x3) << 4]);
       output.push('==');
     }
     return output.join('');
@@ -99,3 +99,38 @@ function hex2bin(input) {
 }
 
 module.exports = { encodeBase64, decodeBase64, hex2bin };
+
+/*
+for (const [value, base64] of [
+  ['1', 'MQ=='],
+  ['12', 'MTI='],
+  ['123', 'MTIz'],
+  ['1234', 'MTIzNA=='],
+  ['12345', 'MTIzNDU='],
+  ['123456', 'MTIzNDU2'],
+  ['1234567', 'MTIzNDU2Nw=='],
+  ['12345678', 'MTIzNDU2Nzg='],
+  ['123456789', 'MTIzNDU2Nzg5'],
+  ['1234567890', 'MTIzNDU2Nzg5MA=='],
+  ['12345678901', 'MTIzNDU2Nzg5MDE='],
+  ['123456789012', 'MTIzNDU2Nzg5MDEy'],
+  ['1234567890123', 'MTIzNDU2Nzg5MDEyMw=='],
+  ['12345678901234', 'MTIzNDU2Nzg5MDEyMzQ='],
+  ['123456789012345', 'MTIzNDU2Nzg5MDEyMzQ1'],
+  ['1234567890123456', 'MTIzNDU2Nzg5MDEyMzQ1Ng=='],
+  ['12345678901234567', 'MTIzNDU2Nzg5MDEyMzQ1Njc='],
+  ['123456789012345678', 'MTIzNDU2Nzg5MDEyMzQ1Njc4'],
+  ['1234567890123456789', 'MTIzNDU2Nzg5MDEyMzQ1Njc4OQ=='],
+  ['12345678901234567890', 'MTIzNDU2Nzg5MDEyMzQ1Njc4OTA='],
+  ['123456789012345678901', 'MTIzNDU2Nzg5MDEyMzQ1Njc4OTAx'],
+  ['1234567890123456789012', 'MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMg=='],
+  ['1234567890123456789012/', 'MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMi8='],
+]) {
+  if (encodeBase64(value) != base64) {
+    console.log(`encodeBase64('${value}') != '${base64}'`);
+  }
+  if (decodeBase64(base64) != value) {
+    console.log(`decodeBase64('${base64}') != '${value}'`);
+  }
+}
+*/
