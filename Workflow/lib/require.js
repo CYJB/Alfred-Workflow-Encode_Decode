@@ -23,7 +23,10 @@
     app.closeAccess(path);
     (function (__moduleName__, __content__, require, module, exports) {
       try {
-        eval(__content__);
+        const oldModule = globalThis.module;
+        globalThis.module = module;
+        new Function(__content__)();
+        globalThis.module = oldModule;
       } catch (e) {
         console.log('load module', __moduleName__, 'failed:', e)
       }

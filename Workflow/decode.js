@@ -24,7 +24,10 @@ const { decodeHTML } = require('./lib/html-entities');
 function run(argv) {
   const text = argv[0];
   const result = new Result();
-  const urlDecode = decodeURIComponent(text);
+  let urlDecode = text;
+  try {
+    urlDecode = decodeURIComponent(text);
+  } catch (ignored) { }
   if (urlDecode !== text) {
     result.add({
       uid: 'URL',

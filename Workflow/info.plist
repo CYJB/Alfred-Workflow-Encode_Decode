@@ -894,6 +894,7 @@
 
 - URL
 - HTML 实体
+- JSON 字符串
 - Base64
 - MD5
 - CRC32</string>
@@ -1064,7 +1065,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.3</string>
+	<string>1.0.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/CYJB/Alfred-Workflow-Encode_Decode</string>
 </dict>
