@@ -1065,7 +1065,7 @@
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.5</string>
+	<string>1.0.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/CYJB/Alfred-Workflow-Encode_Decode</string>
 </dict>

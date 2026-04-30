@@ -1,7 +1,7 @@
 /**
  * 命名实体。
  */
-exports.namedEntities = {
+module.exports.namedEntities = {
   "&AElig": "Æ",
   "&AElig;": "Æ",
   "&AMP": "&",
