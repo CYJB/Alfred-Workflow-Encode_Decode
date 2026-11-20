@@ -21,16 +21,13 @@
     const handle = app.openForAccess(path);
     const content = app.read(handle);
     app.closeAccess(path);
-    (function (__moduleName__, __content__, require, module, exports) {
-      try {
-        const oldModule = globalThis.module;
-        globalThis.module = module;
-        new Function(__content__)();
-        globalThis.module = oldModule;
-      } catch (e) {
-        console.log('load module', __moduleName__, 'failed:', e)
-      }
-    })(moduleName, content, require, module, module.exports);
+    try {
+      // new Function 的函数体只处于全局作用域，必须以形参传入 CommonJS 变量，
+      // 否则模块内裸用的 exports、require 无法解析。
+      new Function('require', 'module', 'exports', content)(require, module, module.exports);
+    } catch (e) {
+      console.log('load module', moduleName, 'failed:', e)
+    }
     return module.exports;
   }
   return require;
